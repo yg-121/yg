@@ -1,0 +1,243 @@
+.controlPanelBackground {
+  align-self: stretch;
+  width: 4px;
+  position: relative;
+  border-radius: 0 var(--br-base) var(--br-base) 0;
+  background-color: var(--color-white);
+}
+.controlPanelIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: cover;
+  min-height: 20px;
+}
+.dashboard {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 73px;
+}
+.dashboardLabel {
+  flex-direction: column;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.controlPanelItem,
+.dashboardItem,
+.dashboardLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dashboardItem {
+  flex-direction: row;
+  gap: var(--gap-mini);
+}
+.controlPanelItem {
+  flex-direction: column;
+  padding: var(--padding-7xl) 0 0;
+}
+.controlPanelBackgroundParent,
+.sideMenuInner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.controlPanelBackgroundParent {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.sideMenuInner {
+  height: 72px;
+  justify-content: flex-end;
+  padding: 0 var(--padding-2xl) 0 0;
+  box-sizing: border-box;
+  color: var(--color-white);
+}
+.peopleIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: contain;
+  min-height: 20px;
+}
+.users {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 39px;
+}
+.usersLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.peopleItem,
+.peopleItemWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.peopleItem {
+  justify-content: flex-start;
+  padding: var(--padding-7xl) var(--padding-14xl);
+  gap: var(--gap-mini);
+  cursor: pointer;
+}
+.peopleItemWrapper {
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xl);
+}
+.todoListIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: contain;
+  min-height: 20px;
+}
+.tasks {
+  position: relative;
+  display: inline-block;
+  min-width: 39px;
+}
+.tasksItem,
+.tasksLabel,
+.todoListItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tasksLabel {
+  flex-direction: column;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.tasksItem,
+.todoListItem {
+  flex-direction: row;
+}
+.tasksItem {
+  flex: 1;
+  padding: var(--padding-7xl) 0;
+  gap: var(--gap-mini);
+  cursor: pointer;
+}
+.todoListItem {
+  align-self: stretch;
+  padding: 0 0 0 var(--padding-8xl);
+}
+.settingsIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: contain;
+  min-height: 20px;
+}
+.setting {
+  position: relative;
+  display: inline-block;
+  min-width: 48px;
+}
+.settingLabel {
+  flex-direction: column;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.settingLabel,
+.settingsParent,
+.todoListItemParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.settingsParent {
+  flex-direction: row;
+  padding: var(--padding-7xl) var(--padding-4xl);
+  gap: var(--gap-mini);
+  cursor: pointer;
+}
+.todoListItemParent {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-8xl);
+  gap: var(--gap-xs);
+}
+.logoutRoundedIcon {
+  height: 17px;
+  width: 17px;
+  position: relative;
+  object-fit: cover;
+  min-height: 17px;
+}
+.logOut {
+  position: relative;
+  display: inline-block;
+  min-width: 51px;
+}
+.logoutLabel {
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.logoutItem,
+.logoutItemWrapper,
+.logoutLabel,
+.sideMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.logoutItem {
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.logoutItemWrapper,
+.sideMenu {
+  justify-content: flex-end;
+  padding: 0 var(--padding-19xl);
+}
+.sideMenu {
+  height: 790px;
+  width: 256px;
+  box-shadow: 4px 0 10px #3c63b3;
+  border-radius: 0 var(--br-29xl) var(--br-29xl) 0;
+  background-color: var(--color-darkslateblue);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-99xl) var(--padding-53xl) var(--padding-38xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-4xs);
+  min-width: 256px;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 975px) {
+  .sideMenu {
+    padding-top: var(--padding-58xl);
+    padding-bottom: var(--padding-18xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 725px) {
+  .sideMenu {
+    flex: 1;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sideMenu {
+    padding-top: var(--padding-31xl);
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}

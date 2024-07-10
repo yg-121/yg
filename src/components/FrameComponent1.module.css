@@ -1,0 +1,41 @@
+.controlPanelIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: cover;
+  min-height: 20px;
+}
+.dashboard {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 73px;
+}
+.controlPanelParent,
+.menuOptionsInner,
+.subOptions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.subOptions {
+  flex-direction: column;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.controlPanelParent,
+.menuOptionsInner {
+  flex-direction: row;
+}
+.controlPanelParent {
+  padding: var(--padding-7xl) var(--padding-27xl);
+  gap: var(--gap-mini);
+  cursor: pointer;
+}
+.menuOptionsInner {
+  padding: 0 0 0 var(--padding-5xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-inter);
+}

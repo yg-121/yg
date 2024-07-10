@@ -1,0 +1,104 @@
+.username {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 70px;
+}
+.frameChild {
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.password,
+.usernamePlaceholder {
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.password {
+  min-width: 67px;
+}
+.usernamePlaceholder {
+  width: 92px;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-sm);
+  background-color: transparent;
+  height: 17px;
+  color: var(--color-dimgray);
+  text-align: left;
+  padding: 0;
+}
+.usernamePlaceholderWrapper {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-dimgray);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-xs);
+}
+.logIn {
+  position: relative;
+  font-size: var(--font-size-sm);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  min-width: 42px;
+}
+.logInWrapper,
+.usernameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logInWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs) var(--padding-8xl);
+  background-color: var(--color-orangered-200);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  white-space: nowrap;
+}
+.logInWrapper:hover {
+  background-color: var(--color-orangered-100);
+}
+.usernameParent {
+  width: 526px;
+  box-shadow: 10px 0 14.2px #ada2c2;
+  border-radius: var(--br-lgi);
+  background-color: var(--color-lavender-100);
+  flex-direction: column;
+  padding: var(--padding-32xl) var(--padding-103xl);
+  box-sizing: border-box;
+  gap: var(--gap-15xl);
+  flex-shrink: 0;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 750px) {
+  .usernameParent {
+    gap: var(--gap-mid);
+    padding-left: var(--padding-42xl);
+    padding-right: var(--padding-42xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .usernameParent {
+    padding: var(--padding-14xl) var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

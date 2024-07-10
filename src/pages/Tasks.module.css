@@ -1,0 +1,39 @@
+.content,
+.tasks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content {
+  width: 1344px;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-54xl);
+  max-width: 100%;
+}
+.tasks {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 950px) {
+  .content {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 700px) {
+  .content {
+    gap: var(--gap-17xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .content {
+    gap: var(--gap-lg);
+  }
+}

@@ -1,0 +1,391 @@
+.navigationChild {
+  width: 663px;
+  height: 525px;
+  position: relative;
+  box-shadow: 10px 0 14.2px #ada2c2;
+  border-radius: var(--br-lgi);
+  background-color: var(--color-lavender-100);
+  display: none;
+  max-width: 100%;
+}
+.company {
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  min-width: 65px;
+  z-index: 1;
+}
+.companyName {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+}
+.firstName {
+  border: 0.5px solid var(--color-dimgray);
+  outline: 0;
+  background-color: var(--color-white);
+  align-self: stretch;
+  height: 32px;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  min-width: 169px;
+  z-index: 1;
+}
+.firstNameField {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+  min-width: 183px;
+}
+.targetName {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 87px;
+  z-index: 1;
+}
+.lastName {
+  border: 0.5px solid var(--color-dimgray);
+  outline: 0;
+  background-color: var(--color-white);
+  align-self: stretch;
+  height: 32px;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  min-width: 169px;
+  z-index: 1;
+}
+.lastNameField,
+.nameFields {
+  display: flex;
+  justify-content: flex-start;
+}
+.lastNameField {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 183px;
+}
+.nameFields {
+  width: 598px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--gap-15xl);
+  max-width: 100%;
+}
+.email {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 44px;
+  z-index: 1;
+}
+.emailLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xs);
+}
+.email1,
+.emailField {
+  box-sizing: border-box;
+}
+.email1 {
+  border: 0.5px solid var(--color-dimgray);
+  outline: 0;
+  background-color: var(--color-white);
+  align-self: stretch;
+  height: 32px;
+  border-radius: var(--br-5xs);
+  min-width: 190px;
+  z-index: 1;
+}
+.emailField {
+  width: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-10xs);
+  gap: var(--gap-3xs);
+}
+.assignedExpert {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 112px;
+  z-index: 1;
+}
+.assignedExpertLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.department {
+  border: 0.5px solid var(--color-dimgray);
+  outline: 0;
+  background-color: var(--color-white);
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  min-width: 169px;
+  z-index: 1;
+}
+.assignedExpertField {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.requiredCompletionDate {
+  position: relative;
+  font-weight: 600;
+  z-index: 1;
+}
+.dateInput {
+  width: 76px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) 0 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+}
+.calendarIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: contain;
+  min-height: 20px;
+}
+.completionDateInput {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-dimgray);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-9xs) var(--padding-2xs) var(--padding-7xs)
+    var(--padding-mid);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.completionDateField,
+.departmentInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.completionDateField {
+  align-self: stretch;
+  gap: var(--gap-3xs);
+}
+.departmentInput {
+  flex: 1;
+  gap: var(--gap-12xl);
+  min-width: 183px;
+}
+.assignedDate {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 99px;
+  z-index: 1;
+}
+.resultChild {
+  height: 32px;
+  width: 281px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-dimgray);
+  box-sizing: border-box;
+  display: none;
+}
+.assignedDateInput {
+  width: 76px;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  height: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+  box-sizing: border-box;
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+}
+.calendarIcon1 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: contain;
+  min-height: 20px;
+  z-index: 2;
+}
+.assignedRemarkFields,
+.result {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.result {
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-dimgray);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-8xs) var(--padding-4xs) var(--padding-8xs)
+    var(--padding-lg);
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.assignedRemarkFields {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.remark {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 52px;
+  z-index: 1;
+}
+.assignedRemarkFieldsChild {
+  border: 0.5px solid var(--color-dimgray);
+  outline: 0;
+  background-color: var(--color-white);
+  align-self: stretch;
+  height: 32px;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  min-width: 169px;
+  z-index: 1;
+}
+.assignedRemarkFields1 {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-6xs);
+}
+.assignedRemark,
+.assignedRemarkFields1,
+.departmentField {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.assignedRemark {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-12xl);
+  min-width: 183px;
+}
+.departmentField {
+  width: 597px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 0 var(--padding-2xs);
+  box-sizing: border-box;
+  gap: var(--gap-15xl);
+  max-width: 100%;
+}
+.description {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 79px;
+  z-index: 1;
+}
+.descriptionLabel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xs);
+}
+.department1 {
+  border: 0.5px solid var(--color-dimgray);
+  outline: 0;
+  background-color: var(--color-white);
+  align-self: stretch;
+  height: 32px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  min-width: 169px;
+  z-index: 1;
+}
+.descriptionField,
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.descriptionField {
+  width: 282px;
+  gap: var(--gap-6xs);
+}
+.navigation {
+  align-self: stretch;
+  box-shadow: 10px 0 14.2px #ada2c2;
+  border-radius: var(--br-lgi);
+  background-color: var(--color-lavender-100);
+  padding: var(--padding-42xl) var(--padding-5xl) var(--padding-30xl);
+  box-sizing: border-box;
+  gap: var(--gap-9xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 750px) {
+  .departmentField,
+  .nameFields {
+    gap: var(--gap-mid);
+  }
+  .navigation {
+    padding-top: var(--padding-21xl);
+    padding-bottom: var(--padding-13xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .assignedRemark,
+  .departmentInput {
+    gap: var(--gap-mini);
+  }
+}

@@ -1,0 +1,68 @@
+.menuItems {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logoutRoundedIcon {
+  height: 17px;
+  width: 17px;
+  position: relative;
+  object-fit: cover;
+  min-height: 17px;
+}
+.logOut {
+  position: relative;
+  display: inline-block;
+  min-width: 51px;
+}
+.logOutWrapper {
+  cursor: pointer;
+}
+.logOutWrapper,
+.logout,
+.logoutButton,
+.sideMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logoutButton {
+  gap: var(--gap-mini);
+}
+.logout,
+.sideMenu {
+  padding: 0 var(--padding-44xl);
+}
+.sideMenu {
+  height: 790px;
+  box-shadow: 4px 0 10px #3c63b3;
+  border-radius: 0 var(--br-29xl) var(--br-29xl) 0;
+  background-color: var(--color-darkslateblue);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-99xl) var(--padding-20xl) var(--padding-38xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 950px) {
+  .sideMenu {
+    display: none;
+    padding-top: var(--padding-58xl);
+    padding-bottom: var(--padding-18xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sideMenu {
+    padding-top: var(--padding-31xl);
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}

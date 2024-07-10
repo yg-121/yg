@@ -1,0 +1,389 @@
+.todoListIcon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: cover;
+  min-height: 20px;
+}
+.tasks {
+  position: relative;
+  display: inline-block;
+  min-width: 39px;
+}
+.todoListItem,
+.todoListLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.todoListItem {
+  width: 150px;
+  flex-direction: row;
+  padding: var(--padding-7xl) 0 var(--padding-7xl) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+  cursor: pointer;
+}
+.settingsIcon {
+  align-self: stretch;
+  width: 4px;
+  position: relative;
+  border-radius: 0 var(--br-base) var(--br-base) 0;
+  background-color: var(--color-white);
+}
+.settingsIcon1 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  object-fit: cover;
+  min-height: 20px;
+}
+.setting1 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 48px;
+}
+.settingsName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-5) 0 0;
+}
+.settingsButton {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.settingsButton,
+.settingsLabel,
+.settingsLink {
+  display: flex;
+  align-items: flex-start;
+}
+.settingsLabel {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-7xl) 0 0;
+}
+.settingsLink {
+  align-self: stretch;
+  width: 139.5px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.peopleItem,
+.settingsItem {
+  display: flex;
+  justify-content: flex-start;
+}
+.settingsItem {
+  align-self: stretch;
+  height: 72px;
+  flex-direction: row;
+  align-items: flex-start;
+  color: var(--color-white);
+}
+.peopleItem {
+  width: 185px;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-3xs);
+}
+.logoutRoundedIcon {
+  height: 17px;
+  width: 17px;
+  position: relative;
+  object-fit: cover;
+  min-height: 17px;
+}
+.logOut {
+  position: relative;
+  display: inline-block;
+  min-width: 51px;
+}
+.logoutLabel {
+  cursor: pointer;
+}
+.logoutItem,
+.logoutLabel,
+.logoutLink,
+.sideMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logoutLink {
+  gap: var(--gap-mini);
+}
+.logoutItem,
+.sideMenu {
+  padding: 0 var(--padding-44xl);
+}
+.sideMenu {
+  height: 790px;
+  box-shadow: 4px 0 10px #3c63b3;
+  border-radius: 0 var(--br-29xl) var(--br-29xl) 0;
+  background-color: var(--color-darkslateblue);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-99xl) var(--padding-20xl) var(--padding-38xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  min-width: 256px;
+}
+.settings {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.changeUserName {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 109px;
+}
+.firstName {
+  height: 32px;
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-dimgray);
+  box-sizing: border-box;
+  min-width: 183px;
+}
+.updateActionChild {
+  height: 27px;
+  width: 96px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-orangered-200);
+  display: none;
+}
+.update {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 50px;
+  z-index: 1;
+}
+.updateAction {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs) var(--padding-4xl);
+  background-color: var(--color-orangered-200);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+}
+.rectangleParent:hover,
+.updateAction:hover {
+  background-color: var(--color-orangered-100);
+}
+.firstNameInput,
+.nameInput,
+.updateAction,
+.updateButton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.updateButton {
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+}
+.firstNameInput,
+.nameInput {
+  align-self: stretch;
+}
+.firstNameInput {
+  flex-direction: row;
+  gap: var(--gap-15xl);
+}
+.nameInput {
+  flex-direction: column;
+  gap: 11px;
+}
+.changePassword {
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 105px;
+}
+.firstName1,
+.frameChild {
+  border-radius: var(--br-5xs);
+}
+.firstName1 {
+  height: 32px;
+  flex: 1;
+  background-color: var(--color-white);
+  border: 0.5px solid var(--color-dimgray);
+  box-sizing: border-box;
+  min-width: 183px;
+}
+.frameChild {
+  height: 27px;
+  width: 96px;
+  position: relative;
+  background-color: var(--color-orangered-200);
+  display: none;
+}
+.update1 {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 50px;
+  z-index: 1;
+}
+.rectangleParent {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs) var(--padding-4xl);
+  background-color: var(--color-orangered-200);
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+}
+.firstNameParent,
+.frameWrapper,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+}
+.firstNameParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-15xl);
+}
+.nameInput1 {
+  gap: 21px;
+}
+.nameInput1,
+.settingsContent,
+.userForm {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.userForm {
+  gap: 40px;
+  font-size: var(--font-size-xs);
+  color: var(--color-darkslateblue);
+}
+.settingsContent {
+  gap: 87px;
+}
+.settingsPanel {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-60xl) 0 0;
+  box-sizing: border-box;
+  min-width: 268px;
+  max-width: 100%;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+}
+.content,
+.setting,
+.settingsPanel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content {
+  width: 761px;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-54xl);
+  max-width: 100%;
+}
+.setting {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 800px) {
+  .sideMenu {
+    padding-top: var(--padding-58xl);
+    padding-bottom: var(--padding-18xl);
+    box-sizing: border-box;
+  }
+  .settings {
+    font-size: var(--font-size-13xl);
+  }
+  .content {
+    gap: var(--gap-17xl);
+  }
+}
+@media screen and (max-width: 675px) {
+  .sideMenu {
+    flex: 1;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sideMenu {
+    padding-top: var(--padding-31xl);
+    padding-bottom: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .settings {
+    font-size: var(--font-size-5xl);
+  }
+  .firstNameInput,
+  .firstNameParent {
+    flex-wrap: wrap;
+    gap: var(--gap-mid);
+  }
+  .userForm {
+    gap: var(--gap-xl);
+  }
+  .settingsContent {
+    gap: 43px;
+  }
+  .settingsPanel {
+    padding-top: var(--padding-32xl);
+    box-sizing: border-box;
+  }
+  .content {
+    gap: var(--gap-lg);
+  }
+}

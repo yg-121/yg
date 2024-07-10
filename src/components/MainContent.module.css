@@ -1,0 +1,142 @@
+.tasks {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 116px;
+}
+.youngWomanWritingInANotep {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  object-fit: cover;
+}
+.contentBody1,
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base) 0 0;
+}
+.contentBody1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.addTaskButtonChild {
+  height: 27px;
+  width: 96px;
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-orangered-200);
+  display: none;
+}
+.addTask {
+  position: relative;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 61px;
+  z-index: 1;
+}
+.addTaskButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-8xs) var(--padding-sm) var(--padding-8xs)
+    var(--padding-2xl);
+  background-color: var(--color-orangered-200);
+  border-radius: var(--br-5xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.addTaskButton:hover {
+  background-color: var(--color-orangered-100);
+}
+.formFields,
+.taskForm {
+  display: flex;
+  max-width: 100%;
+}
+.formFields {
+  margin: 0;
+  width: 670px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-19xl);
+}
+.taskForm {
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.contentBody,
+.headerTitle,
+.mainContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contentBody {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-13xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.headerTitle,
+.mainContent {
+  flex-direction: column;
+}
+.headerTitle {
+  align-self: stretch;
+  gap: var(--gap-base);
+  max-width: 100%;
+}
+.mainContent {
+  flex: 1;
+  padding: var(--padding-60xl) 0 0;
+  box-sizing: border-box;
+  max-width: calc(100% - 329px);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 950px) {
+  .tasks {
+    font-size: var(--font-size-13xl);
+  }
+  .taskForm {
+    flex-wrap: wrap;
+  }
+  .mainContent {
+    padding-top: var(--padding-32xl);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .formFields {
+    gap: var(--gap-lgi);
+  }
+}
+@media screen and (max-width: 450px) {
+  .tasks {
+    font-size: var(--font-size-5xl);
+  }
+}
